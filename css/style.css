@@ -62,3 +62,123 @@ body {
 .menu a:hover {
     color: #01aceb;
 }
+
+
+
+/* оформление слайдера*/
+.slayder {
+    background-image: url(../images/fon_2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    max-height: 500px;
+}
+
+.slyder_item-content {
+
+    padding: 70px 200px;
+    max-width: 665px;
+    white-space: nowrap;
+    margin: 0;
+}
+
+
+
+/* оформление слайдеров*/
+.slayder_title {
+
+    text-transform: uppercase;
+    font-size: 60px;
+    line-height: 100px;
+    color: white;
+}
+
+.slyder_text {
+    font-size: 70px;
+    line-height: 45px;
+    color: white;
+    margin-bottom: 45px;
+}
+
+
+/* оформление ссылки на слайдерах*/
+.slyder_silka a {
+    line-height: 30px;
+    color: white;
+    padding: 12px 40px 12px 20px;
+    border: 0.5px solid white;
+    position: relative;
+}
+
+.slyder_silka a:hover {
+    color: #01aceb;
+    background-color: white;
+}
+
+.slyder_silka a:after {
+    content: "\f105";
+    font-family: 'icomoon';
+    color: white;
+    top: 50%;
+    left: 20px;
+    position: relative;
+
+}
+
+.slyder_silka a:hover:after {
+    color: #01aceb;
+}
+
+/* оформление переключателей слайдов*/
+.slick-btn {
+    position: absolute;
+    top: 50%;
+    z-index: 3;
+    width: 70px;
+    height: 70px;
+    border: 1px solid rgba(0,0,0, 0.0);
+    background-color: rgba(0,0,0, 0.4) ;
+    color: #01aceb;
+    cursor: pointer;
+}
+.slick-btn:hover{
+    color: white;
+    border: 1px solid #01aceb;
+    background-color: #01aceb ;
+}
+.slick-btn::before {  /* общие оформления для стрелок*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 35px;
+}
+.slick-next::before{ /*оформления для стрелки вперед*/
+    content: "\f105";
+    font-family: 'icomoon';
+}
+.slick-prev::before { /*оформления для стрелки назад*/
+    content: "\f104";
+    font-family: 'icomoon';
+}
+.slick-next { /*расстановка стрелки вперед*/
+    right: 0;
+}
+
+.slick-prev { /*расстановка стрелки назад*/
+    left: 0;
+}
+
+/* оформление продуктов компании*/
+.images{
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    padding: 60px 250px 60px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    justify-items: center;
+}
+
