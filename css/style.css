@@ -182,3 +182,41 @@ body {
     justify-items: center;
 }
 
+/* Оформление новостей*/
+.cards_row{
+    
+    height: auto;
+    display: flex;
+    flex-wrap: nowrap; 
+    padding-left: 150px; 
+    max-width: 100%;
+}
+.colomn{
+    padding: 0px 15px;
+   
+    
+}
+.news_data,
+.news_cont{
+    
+    height: auto;
+    width: 360px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(235, 235, 235);
+}
+.news_data{
+    color: rgb(112, 112, 112);
+    font-weight: 300;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    line-height: 20px;
+}
+.news_cont{
+    font-size: 25px;
+    line-height: 28px;
+}
+.ob:hover{
+    color: white;
+    background-color: #01aceb;
+}
