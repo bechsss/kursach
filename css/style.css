@@ -94,6 +94,7 @@ body {
 }
 
 .slyder_text {
+    width: 100%;
     font-size: 70px;
     line-height: 45px;
     color: white;
@@ -113,6 +114,7 @@ body {
 .slyder_silka a:hover {
     color: #01aceb;
     background-color: white;
+    transition: 0.5s;
 }
 
 .slyder_silka a:after {
@@ -136,41 +138,51 @@ body {
     z-index: 3;
     width: 70px;
     height: 70px;
-    border: 1px solid rgba(0,0,0, 0.0);
-    background-color: rgba(0,0,0, 0.4) ;
+    border: 1px solid rgba(0, 0, 0, 0.0);
+    background-color: rgba(0, 0, 0, 0.4);
     color: #01aceb;
     cursor: pointer;
 }
-.slick-btn:hover{
+
+.slick-btn:hover {
     color: white;
     border: 1px solid #01aceb;
-    background-color: #01aceb ;
+    background-color: #01aceb;
 }
-.slick-btn::before {  /* общие оформления для стрелок*/
+
+.slick-btn::before {
+    /* общие оформления для стрелок*/
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 35px;
 }
-.slick-next::before{ /*оформления для стрелки вперед*/
+
+.slick-next::before {
+    /*оформления для стрелки вперед*/
     content: "\f105";
     font-family: 'icomoon';
 }
-.slick-prev::before { /*оформления для стрелки назад*/
+
+.slick-prev::before {
+    /*оформления для стрелки назад*/
     content: "\f104";
     font-family: 'icomoon';
 }
-.slick-next { /*расстановка стрелки вперед*/
+
+.slick-next {
+    /*расстановка стрелки вперед*/
     right: 0;
 }
 
-.slick-prev { /*расстановка стрелки назад*/
+.slick-prev {
+    /*расстановка стрелки назад*/
     left: 0;
 }
 
 /* оформление продуктов компании*/
-.images{
+.images {
     margin: 0 auto;
     max-width: 100%;
     height: auto;
@@ -183,40 +195,201 @@ body {
 }
 
 /* Оформление новостей*/
-.cards_row{
-    
+.cards_row {
+
     height: auto;
     display: flex;
-    flex-wrap: nowrap; 
-    padding-left: 150px; 
-    max-width: 100%;
+    flex-wrap: nowrap;
+    padding-left: 150px;
+    width: 100%;
+    padding-bottom: 70px;
 }
-.colomn{
+
+.colomn {
     padding: 0px 15px;
-   
-    
+    width: 100%;
+
 }
+
 .news_data,
-.news_cont{
-    
+.news_cont {
+
     height: auto;
     width: 360px;
     padding-left: 10px;
     padding-bottom: 10px;
     background-color: rgb(235, 235, 235);
 }
-.news_data{
+
+.news_data {
     color: rgb(112, 112, 112);
     font-weight: 300;
     padding-bottom: 15px;
     padding-top: 15px;
     line-height: 20px;
 }
-.news_cont{
+
+.news_cont {
     font-size: 25px;
     line-height: 28px;
 }
-.ob:hover{
-    color: white;
+
+/*Вакансии*/
+.vakansi {
+    padding-top: 40px;
+    background-color: rgb(228, 228, 228);
+    width: 100%;
+    min-height: 608px;
+}
+
+.vak {
+    display: flex;
+    justify-content: center;
+    word-spacing: 30px;
+
+}
+
+.vak_title {
+    text-align: center;
+    word-spacing: normal;
+    padding-bottom: 70px;
+    font-size: 30px;
+}
+
+.spisok {}
+
+.val_stolb_1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    float: right;
+    padding-bottom: 50px;
+}
+
+.val_stolb_2 {
+    float: left;
+    padding: 0 80px;
+}
+
+.vakan,
+.gorod,
+.knopka {
+    word-spacing: normal;
+    font-size: 20px;
+}
+
+.gorod {
+    padding-bottom: 40px;
+    line-height: 40px;
+    font-weight: 500;
+    color: gray;
+}
+
+.vakan a {
+    color: black;
+    font-weight: 500;
+}
+
+.vakan a:hover {
+    color: #01aceb;
+}
+
+.knopka a {
+    padding: 20px 18px 18px 20px;
+    border: 0.5px solid #01aceb;
+    color: #01aceb;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.knopka a:hover {
     background-color: #01aceb;
+    color: white;
+    transition: 0.5s;
+}
+
+
+/*Стажировка*/
+.stajirovka {
+    background-image: url(../images/staj.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 450px;
+    background-repeat: no-repeat;
+    padding: 150px 200px 50px;
+}
+
+.about_inner {
+    max-width: 950px;
+}
+
+.about_title {
+    color: white;
+    font-size: 50px;
+    line-height: 40px;
+}
+
+.about_text {
+    color: white;
+    font-size: 50px;
+    padding-top: 40px;
+    line-height: 40px;
+    padding-bottom: 40px;
+}
+
+.about_inner a {
+    padding: 20px;
+    color: #01aceb;
+    border: 0.5px solid #01aceb;
+    font-weight: 500;
+    font-size: 18px;
+}
+.about_inner a:hover{
+    background-color: #01aceb;
+    color: white;
+    transition: 0.5s;
+}
+
+
+/*партнеры*/
+.cop{
+    padding: 75px 0;
+}
+.par h2{
+    margin: 0  ;
+    text-align: center;
+    
+}
+.clients {
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    padding: 60px 250px 60px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    justify-items: center;
+}
+.img2 img{
+    width: 100px;
+}
+/*Футер*/
+.footer{
+    background-color: gray;
+    padding: 74px 300px 24px 300px;
+    
+}
+.mnu_footer {
+   
+}
+.col_mnu_footer1{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 30%;
+    line-height: 15px;
+}
+.col_mnu_footer{
+    
 }
