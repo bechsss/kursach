@@ -186,7 +186,7 @@ body {
     margin: 0 auto;
     max-width: 100%;
     height: auto;
-    padding: 60px 250px 60px;
+    padding: 70px 250px 70px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -195,20 +195,26 @@ body {
 }
 
 /* Оформление новостей*/
+.news{
+}
 .cards_row {
-
     height: auto;
     display: flex;
-    flex-wrap: nowrap;
-    padding-left: 150px;
+    justify-content: space-around;
     width: 100%;
     padding-bottom: 70px;
+    text-align: center;
 }
 
 .colomn {
-    padding: 0px 15px;
+    display: flex;
+    justify-content: center;
     width: 100%;
-
+}
+.ob{
+    display: inline-block;
+    text-align:left;
+    justify-content: space-around;
 }
 
 .news_data,
@@ -219,6 +225,7 @@ body {
     padding-left: 10px;
     padding-bottom: 10px;
     background-color: rgb(235, 235, 235);
+    
 }
 
 .news_data {
@@ -227,6 +234,7 @@ body {
     padding-bottom: 15px;
     padding-top: 15px;
     line-height: 20px;
+    
 }
 
 .news_cont {
@@ -344,7 +352,8 @@ body {
     font-weight: 500;
     font-size: 18px;
 }
-.about_inner a:hover{
+
+.about_inner a:hover {
     background-color: #01aceb;
     color: white;
     transition: 0.5s;
@@ -352,14 +361,16 @@ body {
 
 
 /*партнеры*/
-.cop{
+.cop {
     padding: 75px 0;
 }
-.par h2{
-    margin: 0  ;
+
+.par h2 {
+    margin: 0;
     text-align: center;
-    
+
 }
+
 .clients {
     margin: 0 auto;
     max-width: 100%;
@@ -371,25 +382,68 @@ body {
     justify-content: space-between;
     justify-items: center;
 }
-.img2 img{
+
+.img2 img {
     width: 100px;
 }
+
 /*Футер*/
-.footer{
-    background-color: gray;
-    padding: 74px 300px 24px 300px;
-    
+.footer {
+    background-color: rgb(228, 228, 228);
+    height: 100%;
+    width: 100%;
 }
-.mnu_footer {
-   
-}
-.col_mnu_footer1{
+
+.pod {
+    padding: 50px 250px 25px;
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 30%;
-    line-height: 15px;
+    justify-content: space-between;
 }
-.col_mnu_footer{
-    
+
+.col_mnu_footer_1 {
+    height: 100px;
+    display: inline-block;
+    width: 200px;
+    vertical-align: top;
+
+}
+
+.col_mnu_footer {
+    display: inline-block;
+    width: 200px;
+    vertical-align: top;
+}
+
+.col_mnu_footer2 {
+    width: 300px;
+    text-align: right;
+}
+
+.strana_footer {
+    font-size: 14px;
+    font-weight: 700;
+    color: grey;
+    padding-bottom: 30px;
+}
+.foot{
+    font-size: 13px;
+    font-weight: 600;
+    color: grey;
+    line-height: 20px;
+}
+.tel{
+    font-size: 13px;
+    font-weight: 300;
+    color: grey;
+    line-height: 20px;
+    padding-bottom: 10px;
+}
+.knopka_1 a{
+    font-size: 12px;
+    line-height: 10px;
+    color: grey;
+    padding-bottom: 20px;
+}
+.knopka_1 a:hover{
+    color: #01aceb;
 }
